@@ -1,5 +1,7 @@
+require 'faireunsalut'
+
 # L'argument par défaut est Monde
-# Auteur: Jim Weirich (jim@somewhere.com)
 nom = ARGV.first || "Monde"
 
-puts "Bonjour, #{nom}!"
+faireunsalut = Faireunsalut.new(nom)
+puts faireunsalut.saluer
